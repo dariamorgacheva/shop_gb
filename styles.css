@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+
+.top {
+  height: 75px;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_left_content {
+  margin-left: 231px;
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.menu_right_content {
+  width: 140px;
+  margin-right: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search_button {
+  margin-top: 10px;
+}
+
+.top_content {
+  background-color: #F1E4E6;
+  display: flex;
+  align-items: center;
+
+}
+
+.man_wearing_a_coat {
+  width: 800px;
+  height: 764px;
+}
+
+#rectangle {
+  width: 12px;
+  height: 92px;
+  background: #F16C7F;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.brand_name {
+  margin: 290px 331px 381px 63px;
+}
+
+.text1 {
+  height: 50px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+
+}
+
+.text2 {
+  height: 30px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 58px;
+  color: #222222; 
+}
+
+.pics_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px 230px 30px 230px;
+}
+
+.long_pic {
+  margin-left: 230px;
+  margin-right: 230px;
+}
