@@ -4,57 +4,60 @@
 }
 
 .container {
-  width: 100%;
-  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 
 .top {
   height: 75px;
   background-color: #222222;
-  display: flex;
-  justify-content: space-between;
 }
 
-.menu_left_content {
-  margin-left: 231px;
-  width: 111px;
+.menu-left-content {
+  margin-left: 110px;
+  width: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  float: left;
+  margin-top: 20px;
+
 }
 
-.menu_right_content {
+.menu-right-content {
   width: 140px;
-  margin-right: 240px;
+  margin-right: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  float: right;
+  margin-top: 20px;
 }
 
-.search_button {
+.search-button {
   margin-top: 10px;
 }
 
-.top_content {
+.top-content {
   background-color: #F1E4E6;
+  height: 764px;
   display: flex;
   align-items: center;
-
 }
 
-.man_wearing_a_coat {
+.man-top {
   width: 800px;
   height: 764px;
 }
 
-#rectangle {
-  width: 12px;
-  height: 92px;
-  background: #F16C7F;
+.item {
+  display: block;
+  position: relative;
+
 }
 
-.flex_row {
+.flex-row {
   display: flex;
   flex-direction: row;
   
@@ -64,55 +67,43 @@
   flex-direction: column;
 }
 
-.brand_name {
+.brand-name {
   width: 50%;
   margin: 290px 331px 381px 63px;
 }
 
-.text1 {
-  height: 50px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
-  color: #222222;
-
-}
-
-
-
-.text2 {
-  height: 30px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  color: #222222; 
-}
-
-.logo_highlight {
+.logo-highlight {
   color: #F16C7F;
 }
 
 
-.pics_row {
+.pics-row {
   display: flex;
   justify-content: space-between;
-  width: 75vw;
-  margin: 65px 230px 30px 230px;
+  margin-top: 65px;
+  margin-bottom: 30px;
 }
 
-.long_pic {
-  width: 75vw;
-  margin-left: 230px;
+
+.pic {
+  transition: 1s;
 }
 
-.card_department {
+.accessories {
+  width: 100%;
+}
+
+.department:hover .pic {
+  transform: scale(1.2);
+
+}
+
+
+.department {
   position: relative;
 }
 
-.card_description {
+.card-description {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -132,7 +123,152 @@
   text-decoration: none;
 }
 
-.card_highlight {
+.description-highlight {
+  font-family: Lato;
+  font-weight: normal;
   font-size: 24px;
   color: #F16C7F;
+  text-transform: uppercase;
+  line-height: 36px;
+
+}
+
+.menu-item {
+  padding-left: 40px;
+  text-transform: capitalize;
+  line-height: 2em;
+}
+
+.item-sec {
+  display: block;
+}
+
+.item-sec-heading {
+  margin-top: 96px;
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.item-sec-txt {
+  text-align: center;
+  font-family: Lato; 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 6px;
+}
+
+.item-txt-box {
+  padding: 15px;
+}
+
+.txt-desc {
+  color: #5D5D5D;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.item-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 540px
+  
+}
+
+.item-link {
+  width: 263px;
+  display: block;
+  text-decoration: none;
+  transition: opacity 150ms linear;
+}
+
+.item-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.txt-price {
+  width: 315px;
+  height: 50px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #F16D7F;
+}
+
+.item-pic {
+  width: 100%;
+  
+}
+
+.item:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.item:hover .item-pic {
+  filter: brightness(30%);
+
+}
+
+
+
+.add-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 8px;
+  pointer-events: all;
+  
+}
+
+.add-txt {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  margin-left: 5px;
+  margin-top: 15px;
+  
+  color: #FFFFFF;
+}
+
+.add-box {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  pointer-events: none;
+}
+
+.item:hover .add-box {
+  display: flex;
+}
+
+.add-link:hover {
+  box-shadow: 0 0 10px #fff;
+}
+
+.add-pic {
+
 }
