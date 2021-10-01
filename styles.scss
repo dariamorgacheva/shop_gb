@@ -6,6 +6,8 @@
 $site-width: 1200px;
 $bd-width: 3px;
 $highlight-color: #F16C7F;
+$item-pic-height: 420px;
+$item-txt-desc-height: 162px;
 
 .container {
   width: $site-width;
@@ -184,6 +186,7 @@ $highlight-color: #F16C7F;
 
 .item-txt-box {
   padding: 15px;
+  height: 120px;
 }
 
 .txt-desc {
@@ -194,16 +197,20 @@ $highlight-color: #F16C7F;
   margin-bottom: 15px;
 }
 
+.item {
+  height: $item-pic-height + $item-txt-desc-height;
+}
+
 .item-box {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
-  height: 540px
   
 }
 
 .item-link {
-  width: 263px;
+  width: 360px;
+  height: 550px;
   display: block;
   text-decoration: none;
   transition: opacity 150ms linear;
@@ -216,13 +223,11 @@ $highlight-color: #F16C7F;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
-  margin-top: 25px;
   text-transform: uppercase;
 }
 
 .txt-price {
   width: 315px;
-  height: 50px;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -233,7 +238,7 @@ $highlight-color: #F16C7F;
 }
 
 .item-pic {
-  width: 100%;
+  width: 360px;
   
 }
 
@@ -274,8 +279,8 @@ $highlight-color: #F16C7F;
 .add-box {
   display: none;
   position: absolute;
-  top: 20%;
-  left: 27%;
+  top: 30%;
+  left: 33%;
   pointer-events: none;
 }
 
