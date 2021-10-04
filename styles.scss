@@ -8,6 +8,7 @@ $bd-width: 3px;
 $highlight-color: #F16C7F;
 $item-pic-height: 420px;
 $item-txt-desc-height: 162px;
+$charcoal: #222222;
 
 .container {
   width: $site-width;
@@ -17,10 +18,23 @@ $item-txt-desc-height: 162px;
 
 .top {
   height: 75px;
-  background-color: #222222;
+  background-color: $charcoal;
   width: 100%;
 }
 
+.btn-secondary {
+ color: $charcoal; 
+  background-color: $charcoal;
+  border-color: $charcoal; 
+}
+
+.dropdown-toggle::after {
+  display: none; 
+  margin-left: none; 
+  vertical-align: none; 
+  /* content: ""; */
+  border: none;
+}
 
 .menu-left-content {
   margin-left: 110px;
@@ -294,4 +308,205 @@ $item-txt-desc-height: 162px;
 
 .add-pic {
 
+}
+
+
+.pagination {
+  width: 283px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 50px;
+  border: 1px solid #EBEBEB;
+}
+
+
+.page-link {
+  border: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EBEBEB;
+  padding: 0.4rem;
+  
+} 
+
+.catalogue-button {
+  border: 1px solid #FF6A6A;
+  width: 211px;
+  height: 47px;
+  padding: 14px 38px 14px 38px;  
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 48px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+
+.catalogue-button:hover {
+  background-color: $highlight-color;
+  color: white;
+}
+
+.onpage {
+  color: #EF5B70;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: none; 
+  border-bottom-right-radius: none;
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: 0; 
+}
+
+  /*# sourceMappingURL=styles.css.map */
+
+
+.delivery {
+  background-color: $charcoal;
+  height: 350px;
+  margin-top: 96px;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.delivery-features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+
+}
+
+.icon {
+  margin-top: 103px;
+}
+
+.icon-title {
+  margin-top: 25px;
+}
+
+.delivery-desc {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 16px;
+  color: #FBFBFB;
+}
+
+.icon-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.96px;
+  line-height: 24px;
+  /* identical to box height */
+
+
+  color: #FBFBFB;
+}
+
+.subscribe {
+  background-image: url("catalogue-pics/photo\ subscribe.png");
+  background-size: 100%;
+  height: 448px;
+  margin-top: 75px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+
+}
+
+.subscribe-description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #222224;
+
+}
+
+.form {
+  margin-top: 155px;
+
+}
+
+.form-control {
+  border-radius: 25rem;
+  background-color: #E1E1E1;
+  border-color: #E1E1E1;
+  ;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.btn {
+  background-color: $highlight-color;
+  border-top-right-radius: 25rem;
+  border-bottom-right-radius: 25rem;
+  margin-left: -31px;
+  border-color: $highlight-color;
+  height: 50px;
+
+}
+
+
+.social-media {
+  height: 80px;
+  background-color: $charcoal;
+}
+
+.brand-copyright {
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #FBFBFB;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.brand-copyright {
+  margin-top: 30px;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
 }
