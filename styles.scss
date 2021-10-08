@@ -10,6 +10,16 @@ $item-pic-height: 420px;
 $item-txt-desc-height: 162px;
 $charcoal: #222222;
 
+@mixin text-highlight {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
 .container {
   width: $site-width;
   margin: 0 auto;
@@ -93,6 +103,7 @@ $charcoal: #222222;
 }
 
 .flex-column {
+  display: flex;
   flex-direction: column;
 }
 
@@ -124,12 +135,18 @@ $charcoal: #222222;
 
 .department:hover .pic {
   transform: scale(1.2);
+  transition: all 1s;
 
 }
 
 
 .department {
   position: relative;
+}
+
+.product-card  {
+  width: 60%;
+
 }
 
 .card-description {
@@ -258,10 +275,14 @@ $charcoal: #222222;
 
 .item:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transition: all 0.5s;
 }
 
 .item:hover .item-pic {
   filter: brightness(30%);
+  transition: all 0.5s;
+	transform: rotate(45deg);
+  
 
 }
 
@@ -300,10 +321,12 @@ $charcoal: #222222;
 
 .item:hover .add-box {
   display: flex;
+  transition: all 0,5s;
 }
 
 .add-link:hover {
   box-shadow: 0 0 10px #fff;
+  transition: all 0.5s;
 }
 
 .add-pic {
@@ -349,12 +372,14 @@ $charcoal: #222222;
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
+  background-color: white;
 }
 
 
 .catalogue-button:hover {
   background-color: $highlight-color;
   color: white;
+  transition: 1s;
 }
 
 .onpage {
@@ -477,6 +502,13 @@ $charcoal: #222222;
   margin-left: -31px;
   border-color: $highlight-color;
   height: 50px;
+  border-color: #EF5B70;
+}
+
+.btn:hover {
+  background-color: $charcoal;
+  border: $charcoal;
+  transition: all 1s;
 
 }
 
@@ -547,6 +579,7 @@ $charcoal: #222222;
   text-align: center;
 
   color: #5E5E5E;
+  text-align: left;
 }
 
 .product-pink-rectangle {
@@ -621,9 +654,78 @@ color: #F26376;
 .product-add-to-cart:hover .add-to-cart{
   color: white;
   background-color: #EF5B70;
+  transition: all 1s;
 }
 
 .product-add-to-cart:hover {
   color: white;
   background-color: #EF5B70; 
+  transition: all 1s;
+}
+
+.shopping-cart-title {
+  background-color: #F8F3F4;
+  height: 148px;
+  @include text-highlight;
+  padding-top: 57px;
+  padding-left: 230px;
+}
+
+
+.checkout-product-card {
+
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    width: 55%;
+    height: 306px;
+    margin-top: 40px;
+}
+
+.checkout-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  width: 260px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-left: 31px;
+  margin-top: 22px;
+}
+
+.checkout-property {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-left: 31px;
+  margin-top: 6px;
+}
+
+.checkout-buttons-wrap {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-button {
+  width: 211px;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: 1px solid #A4A4A4;
+  background-color: white;
+  margin-top: 72px;
+
+}
+
+.shipping-form {
+  width: 50%;
 }
